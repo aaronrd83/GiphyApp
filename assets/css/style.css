@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.topic-btn {
+    background-color: rgb(32, 5, 187);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 8px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.topic-btn:hover {
+    background-color: white;
+    color: rgb(32, 5, 187);
+
+}
+
+#add-giphy {
+    background-color: white; 
+    color: black; 
+    border: none;
+    padding: 12px 24px;
+    margin: 4px 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#add-giphy:hover {
+    background-color: rgb(32, 5, 187);
+    color: white;
+    border: none;
+
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid black;
+    height: 28px;
+    padding: 12px 20px;
+    font-size: 24px;
+}
