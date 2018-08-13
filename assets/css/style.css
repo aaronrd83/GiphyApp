@@ -1,3 +1,7 @@
+body {
+    background-color: darkgray
+}
+
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -54,4 +58,9 @@ input[type=text] {
     height: 28px;
     padding: 12px 20px;
     font-size: 24px;
+    background-color: darkgray;
+}
+
+#giphy-input {
+    background-color: darkgray
 }
