@@ -4,7 +4,7 @@ function displayGiphy() {
 
     var topics = $(this).attr("data-name")
     console.log(topics)
-    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + topics + '&api_key=hrEIgbr1ZLJhCTUrQv92LuirVHHrHldl&limit=10';
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + topics + '&api_key=hrEIgbr1ZLJhCTUrQv92LuirVHHrHldl&limit=15';
 
     $.ajax({
         url: queryURL,
@@ -12,10 +12,11 @@ function displayGiphy() {
     }).then(function (response) {
         console.log(response.data)
         var gifs = response.data
+        //var middleURL = response.data.bitly_url
 
         console.log(gifs[2].images.original.url)
 
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < 15; i++) {
             //$(function () {
             //$("#giphy-view img").each(function () {
                 var img = $("<img>");
@@ -24,7 +25,7 @@ function displayGiphy() {
                 img.attr("data-animate", gifs[i].images.fixed_height.url);
                 img.attr("data-state", 'still');
                 img.addClass("gif");
-               
+                //$("<div class='text'></p>").text(middleURL)
 
             $("#giphy-view").prepend(img)
             //$("img").before("<p>Rating: " + gifs[i].rating)
